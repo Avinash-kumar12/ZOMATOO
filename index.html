@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zomato Clone</title>
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <div class="first">
+      <div class="second">
+        <div class="heading">
+          <img src="./header _images/zomato.avif" class="head-zom" alt="Zomato" />
+        </div>
+
+        <div class="search_bar">
+          <div class="location">
+            <span class="icon">
+              <img src="./header _images/icons8-location-50.png" alt="location" class="sericon" />
+            </span>
+            <span class="loc_text">Table Space UB City, UB City</span>
+            <span class="dropdown">▼</span>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="search">
+            <div class="search_icon">
+              <img src="./header _images/OIP (1).webp" alt="search_icon" class="sericon" />
+            </div>
+            <input
+              type="text"
+              class="search_input"
+              placeholder="Search for restaurant, cuisine or a dish"
+            />
+          </div>
+        </div>
+
+        <button class="but1">Log in</button>
+        <button class="but2">Sign up</button>
+      </div>
+
+      <!-- home/India/Bengaluru restaurant -->
+      <div class="below_zom">
+        <div class="home">Home /</div>
+        <div class="india">India /</div>
+        <div class="b_res">Bengaluru Restaurants</div>
+      </div>
+
+      <!-- Dining out , Delivery, Night life -->
+      <div class="options_3">
+        <div class="options">
+          <div class="dine">
+            <div class="dineimg">
+              <img src="./header _images/dining.avif" alt="Dining out" class="img1" />
+            </div>
+            <div class="dining">Dining out</div>
+          </div>
+
+          <div class="del">
+            <div class="delimg">
+              <img src="./header _images/delivery.webp" alt="Delivery" class="img2" />
+            </div>
+            <div class="delivery">Delivery</div>
+          </div>
+
+          <div class="nig">
+            <div class="nigimg">
+              <img src="./header _images/nightlife.webp" alt="Night life" class="img3" />
+            </div>
+            <div class="night">Night life</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Collections section -->
+    <section class="collections-section">
+      <!-- Header -->
+      <div class="collections-header">
+        <h2 class="collections-title">Collections</h2>
+
+        <div class="collections-link">
+          All collections in Bengaluru
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+
+      <p class="collections-subtitle">
+        Explore curated lists of top restaurants, cafes, pubs, and bars in Bengaluru, based on trends
+      </p>
+
+      <!-- Slider -->
+      <div class="collections-slider-wrapper">
+        <!-- Left button -->
+        <button class="slider-btn left" id="collectionsPrev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <!-- Cards container -->
+        <div class="collections-cards" id="collectionsTrack">
+          <!-- Card 1 -->
+          <div class="collection-card">
+            <div
+              class="collection-image"
+              style="background-image: url('https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=800');"
+            ></div>
+            <div class="collection-text">
+              <div class="collection-name">New in town</div>
+              <div class="collection-places">
+                22 Places <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="collection-card">
+            <div
+              class="collection-image"
+              style="background-image: url('https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?auto=compress&cs=tinysrgb&w=800');"
+            ></div>
+            <div class="collection-text">
+              <div class="collection-name">Omakase bars</div>
+              <div class="collection-places">
+                9 Places <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="collection-card">
+            <div
+              class="collection-image"
+              style="background-image: url('https://images.pexels.com/photos/2147484/pexels-photo-2147484.jpeg?auto=compress&cs=tinysrgb&w=800');"
+            ></div>
+            <div class="collection-text">
+              <div class="collection-name">It's a date</div>
+              <div class="collection-places">
+                41 Places <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="collection-card">
+            <div
+              class="collection-image"
+              style="background-image: url('https://images.pexels.com/photos/696218/pexels-photo-696218.jpeg?auto=compress&cs=tinysrgb&w=800');"
+            ></div>
+            <div class="collection-text">
+              <div class="collection-name">Insta-worthy spots</div>
+              <div class="collection-places">
+                20 Places <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right button -->
+        <button class="slider-btn right" id="collectionsNext">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+  </header>
+
+  <!-- TOP FILTER BUTTONS -->
+  <div id="head">
+    <button id="Filters">Filters</button>
+    <button id="Offers">Offers</button>
+    <button id="Rating">Rating 4.5+</button>
+    <button id="Alcohol">Serves Alcohol</button>
+    <button id="Open">Open Now</button>
+  </div>
+
+  <!-- Filter options popup -->
+  <div id="filterPopup" class="hidden">
+    <h3>Choose Filter</h3>
+
+    <div class="filterOption">
+      <input type="radio" id="sortByRating" name="filterOption" value="rating" />
+      <label for="sortByRating">Sort by Rating</label>
+    </div>
+
+    <div class="filterOption">
+      <input type="radio" id="sortHighToLow" name="filterOption" value="highLow" />
+      <label for="sortHighToLow">High to Low (Price)</label>
+    </div>
+
+    <div class="filterOption">
+      <input type="radio" id="costOption" name="filterOption" value="costLowHigh" />
+      <label for="costOption">Cost: Low to High</label>
+    </div>
+
+    <div class="filterOption">
+      <input type="radio" id="distanceOption" name="filterOption" value="distance" />
+      <label for="distanceOption">Distance</label>
+    </div>
+
+    <button id="applyFilter">Apply</button>
+    <button id="closeFilter">Close</button>
+  </div>
+
+  <!-- Restaurant cards will be injected here -->
+  <div id="root"></div>
+
+  <!-- FOOTER -->
+  <footer class="footer-wrapper">
+    <!-- Top row -->
+    <div class="footer-top">
+      <div class="footer-logo">zomato</div>
+
+      <div class="footer-selectors">
+        <button class="selector-btn">
+          <span>🇮🇳</span>
+          <span>India</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <button class="selector-btn">
+          <i class="fa-solid fa-globe"></i>
+          <span>English</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Columns -->
+    <div class="footer-columns">
+      <div class="footer-column">
+        <div class="footer-column-title">About Zomato</div>
+        <ul class="footer-links">
+          <li>Who We Are</li>
+          <li>Blog</li>
+          <li>Work With Us</li>
+          <li>Investor Relations</li>
+          <li>Report Fraud</li>
+          <li>Press Kit</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <div class="footer-column-title">Zomaverse</div>
+        <ul class="footer-links">
+          <li>Zomato</li>
+          <li>Blinkit</li>
+          <li>District</li>
+          <li>Feeding India</li>
+          <li>Hyperpure</li>
+          <li>Zomato Live</li>
+          <li>Zomaland</li>
+          <li>Weather Union</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <div class="footer-column-title">For Restaurants</div>
+        <ul class="footer-links">
+          <li>Partner With Us</li>
+          <li>Apps For You</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <div class="footer-column-title">Learn More</div>
+        <ul class="footer-links">
+          <li>Privacy</li>
+          <li>Security</li>
+          <li>Terms</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <div class="footer-column-title">Social Links</div>
+
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+
+        <div class="store-buttons">
+          <div class="store-btn">
+            <i class="fa-brands fa-apple"></i>
+            <span>
+              <span class="store-small">Download on the</span>
+              <span class="store-big">App Store</span>
+            </span>
+          </div>
+
+          <div class="store-btn">
+            <i class="fa-brands fa-google-play"></i>
+            <span>
+              <span class="store-small">Get it on</span>
+              <span class="store-big">Google Play</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-divider"></div>
+    <p class="footer-bottom-text">
+      By continuing past this page, you agree to our Terms of Service, Cookie Policy,
+      Privacy Policy and Content Policies. All trademarks are properties of their
+      respective owners. 2008–2025 © Zomato™ Ltd. All rights reserved.
+    </p>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button class="scroll-top-btn" id="scrollTopBtn">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Main script -->
+  <script src="./script.js"></script>
+</body>
+</html>
